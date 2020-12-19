@@ -52,8 +52,11 @@
                                     <constraint firstAttribute="height" constant="30" id="4Fd-wu-tbX"/>
                                 </constraints>
                                 <state key="normal" title="Get Age In Cat Years"/>
+                                <connections>
+                                    <action selector="getAgeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wj9-cQ-COa"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w5s-ao-qdY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="w5s-ao-qdY">
                                 <rect key="frame" x="30" y="334" width="354" height="498"/>
                             </imageView>
                         </subviews>
@@ -74,6 +77,10 @@
                             <constraint firstItem="w5s-ao-qdY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pGz-aj-aDN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addOldForCatTextField" destination="nve-wm-PtZ" id="oxg-Zv-Fkg"/>
+                        <outlet property="oldCat" destination="5oR-EY-JTe" id="4g6-rQ-VlN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,6 +88,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cat" width="720" height="480"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
